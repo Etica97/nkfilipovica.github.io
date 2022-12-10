@@ -145,3 +145,42 @@ html {
     padding: 3%;
 
 }
+
+@media screen and (max-width: 600px)
+{
+    html {
+        font-size: 15px;
+    }
+    .navbar {
+        padding: 10px 15px;
+        display: inline;
+        line-height: 30px;
+    }
+    .contenthome h1 {
+        font-size: 13px;
+    }
+    .title a {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 33px;
+    }
+    .icon a {
+
+        color: aliceblue;
+    }
+    .aboutpage h4 {
+        padding-top: 80px;
+        width: 100%;
+        text-indent: 10px;
+        line-height: 1.2;
+    }
+    .aboutpage img {
+        max-height: 200px;
+    }
+    .contactpage {
+        padding-top: 100px;
+
+    }
+}
