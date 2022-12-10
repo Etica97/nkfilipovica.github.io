@@ -1,26 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html{
-    font-size: 30px;
+
+html {
+    font-size: 20px;
     scroll-behavior: smooth;
 }
 
 /*background photo for Home page*/
-#home{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(./img/background.jpg);
+#home {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./img/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
 /*navigation*/
 
-.navbar{
+.navbar {
     width: 100%;
     margin: auto;
     padding: 35px 40px;
@@ -31,28 +32,33 @@ html{
     position: fixed;
     z-index: 1000;
 }
-.title a{
-    font-size: 40px;
+
+.title a {
+    font-size: 27px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 25px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 33px;
 }
+
 .title a:hover {
     background-color: rgba(0, 0, 0, 0.25);
     transition: 0.5s ease-in;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
 }
-.navbar ul li::after{
+
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -62,12 +68,13 @@ html{
     bottom: -10px;
     transition: 0.5s;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li:hover::after {
     width: 100%;
 }
 
 /*Home page content*/
-.contenthome{
+.contenthome {
     position: absolute;
     width: 100%;
     top: 55%;
@@ -76,38 +83,49 @@ html{
     text-align: center;
     font-weight: lighter;
 }
-.contenthome h3{
-    font-weight: lighter;
+
+.contenthome img {
+    max-width: 100%;
 }
-.icon a{
+
+.contenthome h1 {
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+.icon a {
     display: inline-block;
     margin: 0 20px;
     position: relative;
     color: #fff;
 }
-.icon svg:hover{
+
+.icon svg:hover {
     color: rgb(173, 21, 21);
     transition: 0.5s;
 }
 
 /*About Us page content*/
-.aboutpage{
-    width: 100%;
+.aboutpage {
+    max-width: 100%;
     height: 100vh;
     margin: auto;
     padding: 10%;
     display: flex;
     flex-wrap: wrap;
 }
-.aboutpage h4{
+
+.aboutpage h4 {
     font-weight: lighter;
     width: 50%;
     align-content: flex-start;
     text-indent: 50px;
     line-height: 1.5;
 }
-.aboutpage img{
+
+.aboutpage img {
     padding: 5%;
+    max-width: 100%;
 }
 
 /*Contact page content*/
@@ -116,13 +134,14 @@ html{
     width: 100%;
     height: 100vh;
     margin: auto;
-    padding: 15%;
+    padding-top: 15%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.95);
-    
-  
+
+
 }
-.contactpage h5{
+
+.contactpage h5 {
     padding: 3%;
 
 }
